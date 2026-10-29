@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#142b4a">
+<meta name="description" content="Portal Silsilah Keluarga untuk mendokumentasikan anggota dan hubungan keluarga lintas generasi.">
+<title>Silsilah Keluarga | Beranda</title>
+<style>
+:root{--navy:#142b4a;--blue:#315fd3;--muted:#66758b;--line:#e5eaf2}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--navy);background:radial-gradient(circle at 12% 12%,#7297ff2e,transparent 32rem),radial-gradient(circle at 90% 82%,#57b89b26,transparent 30rem),#f4f7fc;display:flex;flex-direction:column}
+.topbar{width:min(1120px,calc(100% - 36px));margin:auto;padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em}.brand-mark{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:var(--navy);color:#fff;font-size:24px;box-shadow:0 8px 20px #142b4a30}
+.status{font-size:12px;color:#247a5a;background:#e4f6ed;border:1px solid #ccebdc;padding:7px 11px;border-radius:999px}
+main{flex:1;width:min(1120px,calc(100% - 36px));margin:0 auto;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:clamp(28px,6vw,78px);padding:42px 0 64px}
+.eyebrow{color:var(--blue);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.15em}
+h1{font-size:clamp(38px,5.5vw,64px);line-height:1.05;letter-spacing:-.055em;margin:16px 0 20px}.lead{color:var(--muted);font-size:clamp(16px,1.8vw,18px);line-height:1.8;max-width:570px;margin:0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;align-items:center}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:14px;text-decoration:none;font-weight:750;transition:transform .18s,box-shadow .18s,background .18s}
+.primary{background:var(--blue);color:#fff;box-shadow:0 12px 26px #315fd338}.primary:hover{background:#254db6;transform:translateY(-2px);box-shadow:0 16px 30px #315fd342}.secondary{color:var(--navy);border:1px solid var(--line);background:#fff}.secondary:hover{transform:translateY(-2px)}
+.note{color:var(--muted);font-size:12px;line-height:1.7;margin-top:18px;max-width:530px}
+.visual{min-height:390px;position:relative;display:grid;place-items:center;border:1px solid #ffffffeb;border-radius:32px;background:linear-gradient(145deg,#fffffff2,#edf3ffdc);box-shadow:0 28px 80px #21395f1c;overflow:hidden;padding:28px}
+.visual:before,.visual:after{content:"";position:absolute;border-radius:50%;border:1px solid #dbe5f7}.visual:before{width:290px;height:290px}.visual:after{width:390px;height:390px}
+.tree{z-index:1;width:100%;max-width:370px}.person{position:relative;display:flex;align-items:center;gap:10px;width:fit-content;min-width:138px;margin:0 auto;padding:10px 14px;background:#fff;border:1px solid #e2e9f5;border-radius:15px;box-shadow:0 8px 22px #21395f14}
+.avatar{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:#e8efff;font-size:17px}.person strong{display:block;font-size:12px}.person small{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+.connector{height:25px;width:1px;margin:0 auto;background:#bdcce6}.siblings{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative}.siblings:before{content:"";position:absolute;top:-1px;left:25%;right:25%;height:1px;background:#bdcce6}.siblings .person{min-width:0;padding:9px}.siblings .avatar{flex:0 0 30px;width:30px;height:30px}
+.features{width:min(1120px,calc(100% - 36px));margin:0 auto 52px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:22px;border:1px solid var(--line);border-radius:20px;background:#ffffffd1}.feature-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:#edf2ff;font-size:20px}.feature h2{font-size:15px;margin:15px 0 7px}.feature p{color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:20px 18px;text-align:center}
+@media(max-width:760px){.topbar{padding:16px 0}main{grid-template-columns:1fr;padding:38px 0 42px;gap:34px}h1{font-size:clamp(38px,11vw,54px)}.visual{min-height:340px;padding:18px;border-radius:24px}.features{grid-template-columns:1fr;margin-bottom:36px}.status{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand"><div class="brand-mark" aria-hidden="true">🌳</div><span>Silsilah Keluarga</span></div><div class="status">● Portal keluarga</div></header>
+<main>
+<section>
+<div class="eyebrow">Family Tree Management</div>
+<h1>Setiap keluarga punya cerita.</h1>
+<p class="lead">Simpan kisah keluarga lintas generasi. Kenali anggota keluarga, telusuri hubungan kekerabatan, dan rawat sejarah keluarga dalam satu tempat.</p>
+<div class="actions">
+<a class="button primary" href="https://script.google.com/macros/s/AKfycbzM4amQMo7Rh1axohmFB0E8Hc7lMRziU-fxoriLIJHSJ2pkMXoTzGmfwR75igTSVtS7/exec" target="_blank" rel="noopener noreferrer">Buka Aplikasi <span aria-hidden="true">↗</span></a>
+<a class="button secondary" href="#fitur">Lihat fitur</a>
+</div>
+<p class="note">Tombol “Buka Aplikasi” membuka aplikasi Google Apps Script di tab baru. Login dan pengelolaan data tetap dilakukan pada aplikasi tersebut.</p>
+</section>
+<section class="visual" aria-label="Ilustrasi hubungan keluarga">
+<div class="tree">
+<div class="person"><div class="avatar">👴</div><div><strong>Generasi Leluhur</strong><small>Akar keluarga</small></div></div>
+<div class="connector"></div>
+<div class="person"><div class="avatar">👨‍👩‍👧</div><div><strong>Orang Tua</strong><small>Generasi berikutnya</small></div></div>
+<div class="connector"></div>
+<div class="siblings">
+<div class="person"><div class="avatar">👩</div><div><strong>Anggota</strong><small>Keluarga</small></div></div>
+<div class="person"><div class="avatar">👨</div><div><strong>Anggota</strong><small>Keluarga</small></div></div>
+</div>
+</div>
+</section>
+</main>
+<section class="features" id="fitur">
+<article class="feature"><div class="feature-icon">🌿</div><h2>Data Keluarga</h2><p>Kelola informasi anggota keluarga dan catat hubungan antaranggota.</p></article>
+<article class="feature"><div class="feature-icon">🧬</div><h2>Pohon Silsilah</h2><p>Telusuri hubungan orang tua, anak, dan generasi keluarga.</p></article>
+<article class="feature"><div class="feature-icon">📚</div><h2>Sejarah Keluarga</h2><p>Dokumentasikan perjalanan keluarga untuk generasi selanjutnya.</p></article>
+</section>
+<footer>© <span id="year"></span> Silsilah Keluarga · Family Tree Management</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
